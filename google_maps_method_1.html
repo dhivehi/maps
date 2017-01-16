@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>Dhivehi Maps with Google Maps v3 API</title>
+<!-----jquery must be loaded for Dhivehi maps to work ---->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!-----loading Dhivehi Maps for google map ---->
+<script type="text/javascript" src="https://dhivehi.mv/maps/api/js?type=gmap"></script>
+<!-----loading google maps ---->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+<style type="text/css">
+html, body, #map {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+}
+</style>
+</head>
+<body>
+<div id="map"></div>
+<script type="text/javascript">
+var element = document.getElementById("map");
+
+var mapTypeIds = ["satellite", "dhivehi"];
+
+var gmap = new google.maps.Map(element, {
+   center: new google.maps.LatLng(4.30399, 73.17453),
+   zoom: 10,
+   mapTypeId: "dhivehi",
+   rotateControl: true,
+   mapTypeControlOptions: {
+      mapTypeIds: mapTypeIds
+   }
+}
+);
+
+new dhivehi.maps.Map(gmap);
+</script>
+</body>
+</html>
