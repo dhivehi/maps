@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://openlayers.org/en/v3.20.1/css/ol.css" type="text/css">
+<style type="text/css">
+html, body, #map {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+}
+</style>
+<script src="https://openlayers.org/en/v3.20.1/build/ol.js" type="text/javascript"></script>
+<title>OpenLayers 3 example</title>
+</head>
+<body>
+<div id="map"></div>
+<script type="text/javascript">
+var map = new ol.Map({
+   target: 'map',
+   layers: [
+   new ol.layer.Tile({
+      name: 'Dhivehi Imagick Map',
+      source: new ol.source.XYZ({
+         url: 'https://dhivehi.mv/maps/server/live/?x={x}&y={y}&z={z}'
+      }
+      )
+   }
+   )
+   ],
+   view: new ol.View({
+      center: ol.proj.fromLonLat([73.17453, 4.30399]),
+      zoom: 9
+   }
+   )
+}
+);
+</script>
+</body>
+</html>
