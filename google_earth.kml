@@ -16,7 +16,7 @@
     </Lod>
   </Region>
   <Link>
-    <href>https://dhivehi.mv/maps/server/kml/</href><httpQuery>x=0&amp;y=0&amp;z=0&amp;dx=0&amp;dy=0&amp;trans=0</httpQuery>    
+    <href>https://dhivehi.mv/maps/server/kml/</href><httpQuery>x=0&amp;y=0&amp;z=0</httpQuery>    
     <viewRefreshMode>onRegion</viewRefreshMode>
   </Link>
 </NetworkLink>
