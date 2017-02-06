@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<NetworkLink>
+  <name>Dhivehi Maps</name>
+  <description><![CDATA[Click <a href="https://dhivehi.mv/maps/">here</a> for details]]></description>
+  <Region>
+    <LatLonAltBox>
+      <north>85.051128779807</north>
+      <south>-85.051128779807</south>
+      <east>180</east>
+      <west>-180</west>
+    </LatLonAltBox>
+    <Lod>
+      <minLodPixels>256</minLodPixels>
+      <maxLodPixels>-1</maxLodPixels>
+    </Lod>
+  </Region>
+  <Link>
+    <href>https://dhivehi.mv/maps/server/kml/</href><httpQuery>x=0&amp;y=0&amp;z=0&amp;dx=0&amp;dy=0&amp;trans=0</httpQuery>    
+    <viewRefreshMode>onRegion</viewRefreshMode>
+  </Link>
+</NetworkLink>
+</kml>
