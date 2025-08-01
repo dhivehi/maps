@@ -1,5 +1,5 @@
 # Dhivehi Maps
-Dhivehi Maps is a map of Maldives, provided by www.dhivehi.mv
+Dhivehi Maps is a map of Maldives, provided by https://dhivehi.mv
 
 We have provided various examples on how to intergate Dhivehi Maps tile layer in different mapping libraries. Feel free to use it in your websites/apps. More features coming soon!
 
